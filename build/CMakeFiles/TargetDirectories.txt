@@ -1,4 +1,0 @@
-C:/Users/Lei/Code/cursor_cpp/build/CMakeFiles/cpp_demo.dir
-C:/Users/Lei/Code/cursor_cpp/build/CMakeFiles/leetcode.dir
-C:/Users/Lei/Code/cursor_cpp/build/CMakeFiles/edit_cache.dir
-C:/Users/Lei/Code/cursor_cpp/build/CMakeFiles/rebuild_cache.dir
