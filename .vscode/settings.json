@@ -1,16 +1,18 @@
 {
   "C_Cpp.default.compilerPath": "g++",
   "C_Cpp.default.cppStandard": "c++17",
-  "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
   "C_Cpp.errorSquiggles": "enabled",
   "files.associations": {
     "*.h": "cpp",
     "*.hpp": "cpp"
   },
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   "python.terminal.activateEnvironment": true,
   "python.analysis.typeCheckingMode": "basic",
   "editor.formatOnSave": true,
+  "C_Cpp.clang_format_path": "/home/chery/.local/bin/clang-format",
+  "clang-format.executable": "/home/chery/.local/bin/clang-format",
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
@@ -26,6 +28,6 @@
   "code-runner.ignoreSelection": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "cpp": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot\\scripts\\run-current.ps1\" -Target $fileNameWithoutExt"
+    "cpp": "cmake --build --preset debug --target $fileNameWithoutExt && \"$workspaceRoot/build/bin/$fileNameWithoutExt\""
   }
 }

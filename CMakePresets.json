@@ -1,10 +1,10 @@
 {
-  "version": 6,
+  "version": 3,
   "configurePresets": [
     {
       "name": "mingw-debug",
-      "displayName": "MinGW Debug",
-      "generator": "MinGW Makefiles",
+      "displayName": "Ninja Debug",
+      "generator": "Ninja",
       "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",

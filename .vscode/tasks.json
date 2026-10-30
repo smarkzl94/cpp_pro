@@ -22,11 +22,7 @@
       "type": "shell",
       "command": "cmake --build --preset debug --target ${fileBasenameNoExtension}",
       "options": {
-        "cwd": "${workspaceFolder}",
-        "shell": {
-          "executable": "powershell.exe",
-          "args": ["-NoProfile", "-Command"]
-        }
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": ["$gcc"],
       "presentation": {
@@ -40,13 +36,9 @@
       "dependsOn": ["CMake: 构建当前文件"],
       "dependsOrder": "sequence",
       "type": "shell",
-      "command": "& \"${workspaceFolder}\\build\\bin\\${fileBasenameNoExtension}.exe\"",
+      "command": "\"${workspaceFolder}/build/bin/${fileBasenameNoExtension}\"",
       "options": {
-        "cwd": "${workspaceFolder}",
-        "shell": {
-          "executable": "powershell.exe",
-          "args": ["-NoProfile", "-Command"]
-        }
+        "cwd": "${workspaceFolder}"
       },
       "group": {
         "kind": "build",
